@@ -13,7 +13,7 @@ import jakarta.inject.Inject;
 import jakarta.ws.rs.WebApplicationException;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
-import org.tkit.onecx.file.storage.rs.external.v1.mappers.PresginedUrlMapper;
+import org.tkit.onecx.file.storage.rs.external.v1.mappers.PresignedUrlMapper;
 import org.tkit.quarkus.context.ApplicationContext;
 
 import gen.org.tkit.onecx.file.storage.rs.external.v1.model.PresignedUrlResponseDTOV1;
@@ -44,7 +44,7 @@ public class S3APIService {
     S3Presigner presigner;
 
     @Inject
-    PresginedUrlMapper mapper;
+    PresignedUrlMapper mapper;
 
     @PostConstruct
     void onInit() {

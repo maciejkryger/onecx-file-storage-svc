@@ -8,7 +8,7 @@ import org.tkit.quarkus.rs.mappers.OffsetDateTimeMapper;
 import gen.org.tkit.onecx.file.storage.rs.external.v1.model.PresignedUrlResponseDTOV1;
 
 @Mapper(uses = OffsetDateTimeMapper.class)
-public interface PresginedUrlMapper {
+public interface PresignedUrlMapper {
 
     PresignedUrlResponseDTOV1 map(String url, OffsetDateTime expiration);
 }
