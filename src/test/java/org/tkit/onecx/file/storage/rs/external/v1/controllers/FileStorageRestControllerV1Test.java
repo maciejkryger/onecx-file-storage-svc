@@ -66,8 +66,7 @@ class FileStorageRestControllerV1Test extends AbstractTest {
     }
 
     @Test
-    void uploadFileBadRequestTest() throws Exception {
-        byte[] fileContent = "onecx file content".getBytes();
+    void uploadFileBadRequestTest() {
 
         given()
                 .auth().oauth2(token)

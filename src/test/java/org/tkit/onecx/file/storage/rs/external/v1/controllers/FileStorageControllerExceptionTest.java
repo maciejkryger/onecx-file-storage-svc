@@ -1,7 +1,6 @@
 package org.tkit.onecx.file.storage.rs.external.v1.controllers;
 
 import static io.restassured.RestAssured.given;
-import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 import static org.mockito.ArgumentMatchers.anyString;
 
 import jakarta.ws.rs.core.MediaType;
@@ -19,7 +18,7 @@ import io.quarkus.test.junit.QuarkusTest;
 
 @QuarkusTest
 @GenerateKeycloakClient(clientName = "testClient", scopes = { "ocx-fs:read", "ocx-fs:write", "ocx-fs:delete" })
-public class FileStorageControllerExceptionTest extends AbstractTest {
+class FileStorageControllerExceptionTest extends AbstractTest {
 
     @InjectMock
     S3APIService s3apiService;
